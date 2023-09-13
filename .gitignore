@@ -1,0 +1,13 @@
+package-lock.json
+
+node_modules/
+
+.env
+
+testDevIT.iml
+
+.idea
+
+.cache
+
+dist

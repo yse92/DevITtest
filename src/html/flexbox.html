@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+        }
+
+        aside {
+            flex: 3;
+        }
+
+        main {
+            flex: 7;
+        }
+
+        nav, header, aside, main, footer {
+            margin: 10px;
+            border: 4px solid grey;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h2>Header</h2>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <h2>Navigation</h2>
+    </div>
+</nav>
+
+<div class="main-content">
+    <main>
+        <div class="container">
+            <h2>Content</h2>
+        </div>
+    </main>
+    <aside>
+        <div class="container">
+            <h2>Sidebar</h2>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="container">
+        <h2>Footer</h2>
+    </div>
+</footer>
+</body>
+</html>

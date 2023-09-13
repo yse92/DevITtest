@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 9fr 3fr;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas:
+            "header header"
+            "nav nav"
+            "main sidebar"
+            "footer footer";
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        nav, header, aside, main, footer {
+            margin: 5px;
+            border: 4px solid grey;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-container {
+            height: 100%;
+            display: flex;
+            align-items: center
+        }
+
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="text-container">
+        <h2>Header</h2>
+    </div>
+</header>
+
+<nav>
+    <div class="text-container">
+        <h2>Navigation</h2>
+    </div>
+</nav>
+
+<main>
+    <div class="text-container">
+        <h2>Content</h2>
+    </div>
+</main>
+
+<aside>
+    <div class="text-container">
+        <h2>Sidebar</h2>
+    </div>
+</aside>
+
+<footer>
+    <div class="text-container">
+        <h2>Footer</h2>
+    </div>
+</footer>
+</body>
+</html>
