@@ -1,5 +1,4 @@
 //method which converts array into object
-
 function arrayToObject(arr) {
     const obj = {};
     for (const [key, value] of arr) { //arr[0]-key, arr[1]-value
