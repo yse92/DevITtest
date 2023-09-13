@@ -12,7 +12,7 @@
             //convert the combination into a string for comparison
             const comboStr = combo.sort().toString();
 
-            // check whether there is already such a combination in unique combinations
+            //check whether there is already such a combination in unique combinations
             if (!uniqueCombos.has(comboStr)) {
                 uniqueCombos.add(comboStr);
                 result.push(combo);
@@ -30,3 +30,5 @@
 
     return result;
 }
+// console.log(combos(3));
+// console.log(combos(10));

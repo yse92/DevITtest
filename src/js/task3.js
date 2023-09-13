@@ -1,8 +1,9 @@
 //wrapper function that accepts an array of functions and parameters
 // and returns an array of executed functions
-function bulkRun(functionsAndArgs) {
+function bulkRun(params) {
+    //params - array that contains arrays of pairs of functions + arguments
     //create an array of promises
-    const promises = functionsAndArgs.map(([func, args]) => {
+    const promises = params.map(([func, args]) => {
         return new Promise((resolve) => {
             func(...args, (result) => {
                 resolve(result);

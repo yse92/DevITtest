@@ -1,4 +1,4 @@
-//chunk array func yeilds slices of the array
+//chunk array func yields slices of the array
 function* chunkArray(arr, size) {
     for (let i = 0; i < arr.length; i += size) {
         //use yield to generate and return a slice of array
