@@ -6,5 +6,6 @@
   },
   "scripts": {
     "start": "parcel src/html/flexbox.html"
-  }
+  },
+  "type": "module"
 }
